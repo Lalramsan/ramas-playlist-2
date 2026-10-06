@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rama's Playlist</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+header {
+  background: #10233f;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header .music {
+  font-size: 42px;
+}
+
+header h1 {
+  margin: 8px 0;
+  font-size: 32px;
+}
+
+header p {
+  margin: 5px 0;
+}
+
+.search {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+#search {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.section {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+  color: #10233f;
+}
+
+li {
+  padding: 7px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="music">🎵</div>
+  <h1>Rama's Playlist</h1>
+  <p>A collection of songs for you to enjoy</p>
+  <p>103 songs</p>
+</header>
+
+<div class="search">
+  <input
+    type="text"
+    id="search"
+    placeholder="🔎 Search for a song..."
+    onkeyup="searchSongs()"
+  >
+</div>
+
+<div class="section" id="english">
+<h2>🇬🇧 English Songs</h2>
+
+<ol>
+<li>Achy Breaky Heart</li>
+<li>Always Remember Us This Way</li>
+<li>Annie's Song</li>
+<li>A Thousand Years</li>
+<li>Bella Ciao</li>
+<li>Can't Help Falling in Love</li>
+<li>Cotton Fields</li>
+<li>Country Roads</li>
+<li>Everything I Do</li>
+<li>Every Breath You Take</li>
+<li>Five Hundred Miles</li>
+<li>Have You Ever Seen the Rain</li>
+<li>Hero</li>
+<li>Hotel California</li>
+<li>I Don't Wanna Miss a Thing</li>
+<li>I Think They Call This Love</li>
+<li>Imagine</li>
+<li>In Case You Didn't Know</li>
+<li>It Must Be Love</li>
+<li>Jamaica Farewell</li>
+<li>Leaving on a Jet Plane</li>
+<li>Let It Be</li>
+<li>Living Next Door to Alice</li>
+<li>Make You Feel My Love</li>
+<li>My Heart Will Go On</li>
+<li>Perfect</li>
+<li>Please Release Me</li>
+<li>Rhinestone Cowboy</li>
+<li>Some Broken Hearts Never Mend</li>
+<li>The Older I Get</li>
+<li>The Sound of Silence</li>
+<li>Top of the World</li>
+<li>Until I Found You</li>
+<li>What a Wonderful World</li>
+<li>Wind of Change</li>
+<li>Wonderful Tonight</li>
+<li>Words</li>
+<li>Yesterday Once More</li>
+<li>Yellow</li>
+<li>You Are the Reason</li>
+<li>You Say It Best When You Say Nothing</li>
+</ol>
+</div>
+
+<div class="section" id="hindi">
+<h2>🇮🇳 Hindi Songs</h2>
+
+<ol>
+<li>Aajkal Tere Mere Pyar</li>
+<li>Ae Dil Hai Mushkil</li>
+<li>Ajeeb Dastaan</li>
+<li>Aye Khuda</li>
+<li>Baatein Kuch Ankahee Si</li>
+<li>Chala Jaata Hoon Kisi Ki Dhun Mein</li>
+<li>Channa Mereya</li>
+<li>Chhoo Kar Mere Man Ko</li>
+<li>Dhun</li>
+<li>Dil Beparwah</li>
+<li>Dil Ka Dariya</li>
+<li>Dilbar Mere</li>
+<li>Do Dil Mil Rahe Hain</li>
+<li>Dooba Dooba</li>
+<li>Ek Ajnabee</li>
+<li>Ek Pyar Ka Nagma</li>
+<li>Gazab Ka Hai Din</li>
+<li>Give Me Some Sunshine</li>
+<li>Gulabi Aankhein</li>
+<li>Hai Apna Dil</li>
+<li>Hona Tha Pyaar</li>
+<li>Honthon Se Chhoo Lo Tum</li>
+<li>Humein Tum Se Pyaar Kitna</li>
+<li>Jab Koi Baat Bigad Jaye</li>
+<li>Jeena Jeena</li>
+<li>Jiyein Kyun</li>
+<li>Kaise Hua</li>
+<li>Khat</li>
+<li>Khamoshiyan</li>
+<li>Kisi Ki Muskurahaton</li>
+<li>Kya Hua Tera Waada</li>
+<li>Lag Ja Gale</li>
+<li>Lakhon Hain Yahan Dil Wale</li>
+<li>Main Koi Aisa Geet Gaoon</li>
+<li>Main Rang Sharbaton Ka</li>
+<li>Mera Dil Kahin Door Pahadon Mein</li>
+<li>Mere Rang Mein</li>
+<li>Mere Sapnon Ki Rani</li>
+<li>Mujhe Tum Nazar Se</li>
+<li>Na Tum Jaano Na Hum</li>
+<li>Neele Neele Ambar</li>
+<li>O Mere Dil Ke Chain</li>
+<li>O Meri Jaan</li>
+<li>O Sanam</li>
+<li>Pal Pal Dil Ke Paas</li>
+<li>Pehla Nasha</li>
+<li>Piya O Re Piya</li>
+<li>Purani Jeans</li>
+<li>Pyar Diwana</li>
+<li>Pyar Ke Pal</li>
+<li>Raabta</li>
+<li>Shaam</li>
+<li>Soch Na Sake</li>
+<li>Tere Jaisa Yaar</li>
+<li>Tum Hi Ho</li>
+<li>Tum Se Accha Kaun Hai</li>
+<li>Tum Se Hi</li>
+<li>Yaaron</li>
+<li>Ye Shaam Mastani</li>
+<li>Yeh Chand Sa Roshan Chehra</li>
+<li>Yeh Dosti</li>
+<li>Yeh Raatein Ye Mausam</li>
+</ol>
+</div>
+
+<footer>
+Enjoy the music 🎶
+</footer>
+
+<script>
+function searchSongs() {
+
+  let input = document
+    .getElementById("search")
+    .value
+    .toLowerCase();
+
+  let sections = document.querySelectorAll(".section");
+
+  sections.forEach(function(section) {
+
+    let songs = section.querySelectorAll("li");
+    let found = false;
+
+    songs.forEach(function(song) {
+
+      if (song.textContent.toLowerCase().includes(input)) {
+        song.style.display = "";
+        found = true;
+      } else {
+        song.style.display = "none";
+      }
+
+    });
+
+    section.style.display = found ? "" : "none";
+
+  });
+}
+</script>
+
+</body>
+</html>
